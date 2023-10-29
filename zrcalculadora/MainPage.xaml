@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zrcalculadora.MainPage">
+
+ <!--esto es el panel donde se hara los problemas matematicos-->
+    
+    <!--Zrc inicil de apellido y nombre mas la inicial del proyecto-->
+    
+    <StackLayout Padding="20">
+        <Frame BackgroundColor="WhiteSmoke"
+               Padding="50" Margin="0,0,0,25">
+            <Label 
+                x:Name="ZrcResult"
+                Text="0"
+                FontSize="36"
+                FontAttributes="Bold"
+                HorizontalOptions="End"
+                >
+            </Label>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <!--botones-->
+
+            <Button 
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Text="C" 
+                     FontSize="Large"
+                     FontAttributes="Bold"
+                     Padding="35"
+                     x:Name="BtnClear"
+                     Clicked="BtnClear_Clicked"
+                />
+
+            <Button 
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="X" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnX"
+                    Clicked="BtnX_Clicked"
+                />
+
+            <Button 
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="%"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnPorcentaje"
+                    Clicked="BtnPorcentaje_Clicked"
+                />
+
+            <Button 
+                Grid.Row="0"
+                Grid.Column="3"
+                Text="/"  
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnOperacion_Clicked"
+                />
+
+            <!--botones de numeros 1-->
+            <Button 
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="1" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnOne"
+                    Clicked="BtnCommmon_Clicked"/>
+            <Button 
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="2" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"    
+                />
+                    
+            <Button 
+                Grid.Row="1"
+                Grid.Column="2"
+                Text="3" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+
+            <Button 
+                Grid.Row="1"
+                Grid.Column="3"
+                Text="*" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnOperacion_Clicked"
+                />
+            
+            <!--botones de numeros 2-->
+
+            <Button 
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="4" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="5" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="6" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="3"
+                Text="-" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnOperacion_Clicked"
+                />
+
+            <!--botones de numeros 3-->
+
+            <Button 
+                Grid.Row="3"
+                Grid.Column="0"
+                Text="7" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="3"
+                Grid.Column="1"
+                Text="8" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="3"
+                Grid.Column="2"
+                Text="9" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="3"
+                Grid.Column="3"
+                Grid.RowSpan="2"
+                Text="+" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnOperacion_Clicked"
+                />
+            <!--botones de numeros 4-->
+
+            <Button 
+                Grid.Row="4"
+                Grid.Column="0"
+                Text="0" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="4"
+                Grid.Column="1"
+                Text="." 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    Clicked="BtnCommmon_Clicked"
+                />
+            <Button 
+                Grid.Row="4"
+                Grid.Column="2"
+                Text="=" 
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="35"
+                    x:Name="BtnIgual"
+                    Clicked="BtnIgual_Clicked"
+                />
+         
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
